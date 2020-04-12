@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+
+        <TextView
+            android:id="@+id/status_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/ocr_header" />
+
+        <EditText
+            android:id="@+id/text_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:minHeight="@dimen/text_value_min_height"
+            android:layout_margin="@dimen/small_margin"
+            android:background="@drawable/dashed_border" />
+
+        <CheckBox
+            android:id="@+id/use_flash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/use_flash"
+            android:layout_gravity="center"
+            android:checked="false" />
+
+        <Button
+            android:id="@+id/read_text_button"
+            android:layout_marginTop="@dimen/button_margin_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/read_text"
+            android:background="@color/colorAccent"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/copy_text_button"
+            android:layout_marginTop="@dimen/button_margin_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/copy_text"
+            android:background="@color/colorAccent"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/mail_text_button"
+            android:layout_marginTop="@dimen/button_margin_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/send_email_text"
+            android:background="@color/colorAccent"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/result_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:gravity="center"
+            android:text="Result"
+            android:textSize="20dp"
+            />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

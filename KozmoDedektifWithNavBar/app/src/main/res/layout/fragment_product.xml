@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.products.ProductFragment">
+
+
+    <ImageView
+        android:id="@+id/productImageView"
+        android:layout_width="149dp"
+        android:layout_height="174dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_dashboard_black_24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.114"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/productNameText"
+        android:layout_width="103dp"
+        android:layout_height="24dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/productImageView"
+        tools:layout_editor_absoluteY="30dp" />
+
+    <TextView
+        android:id="@+id/productContentText"
+        android:layout_width="351dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="32dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/productImageView" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
